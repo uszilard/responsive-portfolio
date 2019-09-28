@@ -281,6 +281,6 @@ input[type=submit] {
 
 @media screen and (max-width: 600px) {
     nav {
-        float: right;
+        float: left;
         width: 100%;
     }
