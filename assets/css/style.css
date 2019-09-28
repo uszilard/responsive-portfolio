@@ -6,75 +6,7 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -88,17 +20,7 @@ body {
     line-height: 1;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -106,15 +28,11 @@ nav ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
@@ -127,9 +45,7 @@ a {
     background: transparent;
 }
 
-
 /*Reset stylesheet up*/
-
 
 /*Personal stylesheet down*/
 
@@ -145,7 +61,6 @@ body {
     box-sizing: border-box;
 }
 
-
 /* general */
 
 .container {
@@ -155,10 +70,7 @@ body {
     clear: both;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
     margin-bottom: 20px;
 }
 
@@ -166,9 +78,7 @@ p:last-child {
     margin-bottom: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
     color: #4aaaa5;
@@ -181,11 +91,9 @@ h1 {
     border-bottom: 3px solid #dddddd;
 }
 
-h2,
-h3 {
+h2, h3 {
     font-size: 22px;
 }
-
 
 /* header */
 
@@ -233,7 +141,6 @@ nav a:first-child {
     border-left: 0 none;
 }
 
-
 /* footer */
 
 footer {
@@ -248,14 +155,12 @@ footer {
     height: 50px;
 }
 
-h3,
-h2 {
+h3, h2 {
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 22px;
     border-bottom: 2px solid #eeeeee;
 }
-
 
 /* main */
 
@@ -273,7 +178,6 @@ h2 {
     background: #ffffff;
     border: 1px solid #dddddd;
 }
-
 
 /* portfolio page */
 
@@ -317,7 +221,6 @@ h2 {
     margin-right: 25px;
 }
 
-
 /* contact page */
 
 #contact-form ul {
@@ -328,17 +231,12 @@ h2 {
     margin-bottom: 10px;
 }
 
-label,
-input[type=text],
-input[type=email],
-textarea {
+label, input[type=text], input[type=email], textarea {
     display: block;
     width: 100%;
 }
 
-input[type=text],
-input[type=email],
-textarea {
+input[type=text], input[type=email], textarea {
     height: 35px;
     padding: 0 10px;
     font-size: 14px;
@@ -358,12 +256,10 @@ input[type=submit] {
     border: 0 none;
 }
 
-
 /*
   These rules take effect when the browser's width
-  is either 768px or less.
+  is either 992px and second effect at 600px or less.
 */
-
 
 /* On screens that are 992px or less, set the background color to blue */
 
@@ -373,7 +269,6 @@ input[type=submit] {
     }
 }
 
-
 /* On screens that are 600px or less, set the background color to olive */
 
 @media screen and (max-width: 600px) {
@@ -381,3 +276,11 @@ input[type=submit] {
         background-color: olive;
     }
 }
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    nav {
+        float: right;
+        width: 100%;
+    }
