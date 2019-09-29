@@ -258,29 +258,46 @@ input[type=submit] {
 
 /*
   These rules take effect when the browser's width
-  is either 992px and second effect at 600px or less.
+  is either ...
 */
 
-/* On screens that are 992px or less, set the background color to blue */
+/* On screens that are 980px or less, set the background color to blue */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 980px) {
     #main-container {
-        background-color: blue;
+        background-color: rgb(0, 0, 148);
     }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
+/* On screens that are 768px or less, set the background color to olive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #main-container {
-        background-color: olive;
+        background-color: rgb(114, 54, 5);
     }
 }
 
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+/* On screens that are 640px or less, set the background color to olive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+    #main-container {
+        background-color: rgb(182, 182, 178);
+        padding-top: 40px;
+    }
+}
+
+/* On screens that are 640px wide or less, make the menu links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 640px) {
     nav {
-        float: left;
-        width: 100%;
+        float: right;
     }
+}
+
+/* The position of the header is `static` (the default positioning) when the screen is `640px` wide.8*/
+
+@media screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+    }
+}
